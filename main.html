@@ -33,26 +33,30 @@
                         <img class="profile-image" src="img/profile_image.png" alt="">
                         <div class="profile-info-block">
                             <div id="EditSection">
-                                <input id="InputName" placeholder="Введите имя" />
-                                <button id="PostName">✅</button>
+                                <input id="InputName"  class="InputName" placeholder="Введите имя" />
+                                <button id="PostName" class="PostNameButton">✓</button>
                             </div>
                             <div id="NameSection" class="hidden">
                                 <span class="profile-name" id="profileName"></span>
-                                <button id="EditName">✏️</button>
+                                <button id="EditName" class="EditNameButton">✏️</button>
                             </div>
                             <p class="profile-opisanie">Описание</p>
                         </div>
                     </div>
 
                     <div class="profile-instrument-block">
-                        <p class="instrument-logo">Инструменты</p>
+                        <span class="instrument-logo">Инструменты</span>
+                        <button id="EditToolsButton" class="EditToolsButton">✏️</button>
+                        <button id="HiddenToolsInput" class="HiddenToolsInput">✖️</button>
                         <div class="instruments">
                             <ul id="tools-list"></ul>
-                            <div class="input-group">
-                                <input class="InputInstrument" type="text" id="InputInstrument" placeholder="Введите название инструмента">
-                                <button id="AddInstrument" class="AddInstrument">+</button>
-                            </div>
-
+                            <span id="Group" class="hidden">
+                                <div class="InputGroup">
+                                    <input class="InputInstrument" type="text" id="InputInstrument" placeholder="Введите название инструмента">
+                                    <button id="AddInstrument" class="AddInstrument">+</button>
+                                </div>
+                            </span>
+                                
                         </div>
                     </div>
 
