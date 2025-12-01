@@ -162,9 +162,7 @@ main {
 .instruments {
     gap: 12px;
     margin-top: 12px;
-    display: flex;
     align-items: center;
-
     
 }
 
@@ -225,7 +223,7 @@ main {
     display: none;
 }
 
-.input-group {
+.InputGroup {
     width: 220px;
     display: flex;
     border: 1px solid #000;
@@ -257,7 +255,7 @@ main {
 #tools-list {
     list-style: none;
     padding: 0;
-    max-width: 300px;
+    max-width: 500px;
 }
 #tools-list li {
     display: inline-block;
@@ -274,4 +272,39 @@ main {
     padding-right: 16px;
     background-color: rgba(0, 0, 0, 0.1);
 
+}
+
+.PostNameButton {
+    background: rgb(43, 196, 43);
+    border: solid 1px rgb(85, 85, 85);
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 4px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.PostNameButton:hover {
+    background: rgb(23, 134, 23);
+}
+
+.EditNameButton, .EditToolsButton, .HiddenToolsInput {
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(85, 85, 85);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.EditNameButton:hover, .EditToolsButton:hover, .HiddenToolsInput:hover {
+    background: rgb(206, 206, 206);
+}
+
+
+#InputName {
+    font-size: 15px;
+    color: #000;
+    border-radius: 3px;
+    font-family: "Inter", sans-serif;
 }
